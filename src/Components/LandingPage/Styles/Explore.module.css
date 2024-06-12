@@ -1,0 +1,23 @@
+.lists{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(calc(1280px/4), 1fr));
+}
+.img{
+    height: 250px;
+    overflow: hidden;
+}
+.lists li img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.lists li{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    margin-block-start: 2em;
+    margin-top: auto;
+    align-self: baseline;
+}

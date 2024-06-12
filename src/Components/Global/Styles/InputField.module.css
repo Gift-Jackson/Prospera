@@ -1,0 +1,36 @@
+.red{
+    color: crimson;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+.input label{
+    font-size: small;
+}
+.input input, .input textarea, .input select{
+    padding: .75em 1.3em;
+    border: 1px solid var(--border);
+    border-radius: .3em;
+}
+.input input:focus-within,
+.input textarea:focus-within,
+.input select:focus-within{
+    outline: 4px solid rgb(250, 151, 171);
+    border-color: crimson;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.field span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+}

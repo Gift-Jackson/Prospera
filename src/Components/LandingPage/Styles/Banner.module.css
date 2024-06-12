@@ -1,0 +1,20 @@
+.banner{
+    display: flex;
+    min-height: 100dvh;
+    align-items: center;
+    gap: 2em;
+    padding: 3em 0;
+}
+.banner>div{
+    flex: 1;
+}
+
+.banner>div img{
+    width: 100%;
+}
+
+@media (max-width:728px) {
+    .banner{
+        flex-direction: column;
+    }
+}

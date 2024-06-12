@@ -1,0 +1,123 @@
+.header{
+    min-height: 70px;
+    display: block;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    z-index: 99;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand h2{
+    font-family: var(--font-3);
+    color: var(--white);
+    padding-top: .3em;
+}
+.layer_1{
+    background-color: var(--dark);
+
+}
+.nav_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.num{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+.num p, .num i{
+    color: var(--white);
+}
+.num p{
+    font-size: small;
+}
+.icon{
+    height: 45px;
+    width: 45px;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.links{
+    display: flex;
+    align-items: center;
+}
+.links .nav-link{
+    color: var(--text-light);
+}
+.links .nav-link.active{
+    color: var(--text);
+}
+
+.layer_2{
+    background-color: var(--white);
+}
+
+.nav_2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: .5rem;
+}
+
+.nav_2 a {
+    padding: .5rem 1rem;
+    display: block;
+    color: var(--black);
+    font-size: .9em;
+}
+
+.nav_2 a:hover,
+.header-layer-2 nav ul a.current {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn{
+    height: 45px;
+    padding: 0 2em;
+    border: 0;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: .3em;
+}
+
+@media (max-width:800px) {
+    .call{
+        display: none;
+    }
+    .brand h2{
+        font-size: 1.2em;
+    }
+    .brand img{
+        height: 30px;
+    }
+    .nav_2 a {
+        font-size: small;
+    }
+}

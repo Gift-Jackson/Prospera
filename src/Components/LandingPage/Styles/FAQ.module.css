@@ -1,0 +1,36 @@
+.faqList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .question p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .answer {
+    padding: 1em;
+    font-size: small;
+    background-color: #f9f9f9;
+  }
+.container{
+    width: min(100%, 700px);
+    margin: auto;
+    padding: 1em;
+    border: 1px solid var(--border);
+    border-radius: .5em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}  

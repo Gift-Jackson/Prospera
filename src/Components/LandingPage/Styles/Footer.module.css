@@ -1,0 +1,78 @@
+
+.footer *{
+    color: var(--white);
+}
+
+.footer{
+    background-color: var(--dark);
+    margin: 3em 0 0;
+    padding: 3rem 0;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(1280px/4), 1fr));
+    gap: 2em;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand h2{
+    padding-top: .3em;
+}
+.lists {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 1em;
+    margin-top: 1em;
+
+}
+
+
+.footer a, .footer li{
+    color: var(--text-light);
+    font-size: small;
+}
+.social{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    gap: 1em;
+}
+.social a{
+    padding: .4em .8em;
+    border-radius: .3em;
+    font-size: 1.2em;
+    border: 1px solid var(--border);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    margin: .3em 0 1em;
+}
+.form input{
+    padding: .65em 1em;
+    border: 1px solid var(--border);
+    background-color: transparent;
+}
+.form button{
+    background-color: var(--white);
+    color: var(--dark);
+    border: 0;
+    padding: .3em 0;
+}
+
+.form button i{
+    color: var(--dark);
+}
+
+.text{
+    border-top:1px solid var(--text-light);
+    padding-top: 1em;
+    font-size: small;
+    text-align: center;
+    margin-top: 3em;
+}

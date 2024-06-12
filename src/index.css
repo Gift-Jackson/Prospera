@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+  font-family: var(--font-1);
+  color: var(--text);
+}
+
+*::-webkit-scrollbar {
+  height: .5rem;
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 0;
+}
+
+:root{
+  --primary: crimson;
+  --secondary: #f7f7f7;
+  --border: #ededed;
+  --border-focus: #aaa;
+  --text: #303030;
+  --text-light: #777;
+  --white:#fefefe;
+  --dark:#121212;
+  --font-1:"Poppins", sans-serif ;
+  --font-2: "Cardo", serif;
+  --font-3: "Josefin Sans", sans-serif;
+
+  --green: mediumseagreen;
+  --blue: dodgerblue;
+  --orange: orange;
+  --crimson:crimson;
+  --purple:mediumslateblue;
+  --pink: #FE34B9;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+  color: var(--font-color);
+}
+
+i,
+span,
+a {
+  color: inherit;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3em;
+  font-size: 1em;
+}
+button:hover{
+  filter: brightness(80%);
+}
+
+button:active {
+  filter: brightness(120%);
+}
+
+main {
+  width: min(90%, 1280px);
+  margin: auto;
+}
+.nav-link{
+  color: var(--white);
+}
+.nav-link.active, .nav-link:hover{
+  color: var(--white);
+  background-color: var(--primary);
+}
+.main-container{
+  padding-top: 5em;
+}
+

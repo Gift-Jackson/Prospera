@@ -1,0 +1,54 @@
+.mark{
+    color: var(--primary);
+}
+.gridInp{
+    display: grid;
+    gap: .5em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.form{
+    width: min(100%, 700px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.form button{
+    width: min(100%, 400px);
+    margin: 1em auto;
+    padding: .5em;
+    border: 0;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: .3em;
+}
+.chk{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+.chk input{
+    accent-color: var(--primary);
+}
+.chk label{
+    font-size: small;
+}
+.text{
+    text-align: center;
+    font-size: small;
+}
+
+.container{
+    padding-bottom: 3em;
+}
+.error{
+    color: var(--primary);
+    font-size: small;
+}
+.back_btn{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    display: flex;
+    align-items: center;
+}
