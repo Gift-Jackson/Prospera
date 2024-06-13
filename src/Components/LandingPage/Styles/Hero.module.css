@@ -1,5 +1,5 @@
 .hero_section{
-    min-height: calc(100dvh - 70px);
+    min-height: calc(100vh - 70px);
     background-color: red;
     display: flex;
     justify-content: center;
@@ -36,6 +36,7 @@
     height: 50px;
     width: 220px;
     border: 0;
+    border-radius: .5em
 }
 .btn_1{
     background-color: var(--white);

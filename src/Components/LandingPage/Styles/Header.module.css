@@ -1,5 +1,5 @@
 .header{
-    min-height: 70px;
+    /* min-height: 70px; */
     display: block;
     align-items: center;
     position: fixed;
@@ -27,7 +27,6 @@
 }
 .layer_1{
     background-color: var(--dark);
-
 }
 .nav_1{
     display: flex;

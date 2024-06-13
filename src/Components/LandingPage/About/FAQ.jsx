@@ -11,7 +11,7 @@ const Faq = () => {
   };
 
   return (
-    <>
+    <main>
       <Title title="Frequently Asked Questions" subtitle="" />
       <div className={styles.container}>
         <ul className={styles.faqList}>
@@ -30,7 +30,7 @@ const Faq = () => {
           ))}
         </ul>
       </div>
-    </>
+    </main>
   );
 };
 

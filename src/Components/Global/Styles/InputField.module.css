@@ -4,10 +4,11 @@
 .input{
     display: flex;
     flex-direction: column;
-    gap: .3em;
+    /* gap: .3em; */
 }
 .input label{
     font-size: small;
+    padding-left: .3em;
 }
 .input input, .input textarea, .input select{
     padding: .75em 1.3em;

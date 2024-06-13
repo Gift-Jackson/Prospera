@@ -5,13 +5,15 @@ const AuthLayout = ({ children }) => {
   return (
     <>
       <main>
-        <div className={styles.container}>{children}</div>
-        <Link to={-1}>
-          <div className={styles.back_btn}>
-            <span className="material-symbols-outlined">arrow_back</span>
-            <span>Back</span>
-          </div>
-        </Link>
+        <div className="main-container">
+            <div className={styles.container}>{children}</div>
+            <Link to={-1}>
+              <div className={styles.back_btn}>
+                <span className="material-symbols-outlined">arrow_back</span>
+                <span>Back</span>
+              </div>
+            </Link>
+        </div>
       </main>
     </>
   );

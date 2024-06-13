@@ -5,11 +5,12 @@
     padding: 0 3em;
     border: 0;
     margin-top: 2em;
+    border-radius: .5em;
 }
 .wrapper{
     display: flex;
     gap: 2em;
-    padding: 3em 0;
+    padding: 0 0 3em;
 }
 .wrapper>div{
     flex: 1;
@@ -20,6 +21,7 @@
 .wrapper img{
     width: 100%;
     border-bottom: 5px solid var(--primary);
+    background-color: var(--secondary);
 }
 
 @media (max-width:800px) {

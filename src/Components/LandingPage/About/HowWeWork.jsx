@@ -1,6 +1,7 @@
 import Title from "../Compo/Title"
 import styles from "../Styles/About.module.css"
 import image from "../../../assets/masonry-2.jpg"
+import { Link } from "react-router-dom"
 const HowWeWork = () => {
   return (
       <>
@@ -22,6 +23,15 @@ const HowWeWork = () => {
                       <article>
                       International giving can be complex. With Prospera, it doesn&apos;t have to be. Prospera and its subsidiaries have given more than $3.8 billion in charitable donations to organizations in over 135 countries around the world.
                       </article>
+                      <Link to="register">
+              <button
+                title="Sign up with Prospera to apply for grant."
+                className={styles.btn}
+              >
+                Apply for grant &nbsp;{" "}
+                <i className="fa-solid fa-arrow-right"></i>
+              </button>
+            </Link>
                   </div>
               </div>
       </main>

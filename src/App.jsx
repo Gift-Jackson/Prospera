@@ -6,6 +6,8 @@ import ContactsPage from "./Components/LandingPage/Pages/ContactsPage";
 import AboutPage from "./Components/LandingPage/Pages/AboutPage";
 import Register from "./Components/Authentication/Register";
 import Login from "./Components/Authentication/Login";
+import DashboardLayout from "./Components/Dashboard/DashboardLayout";
+import Dashboard from "./Components/Dashboard/Pages/Dashboard";
 const App = () => {
   return (
     <>
@@ -17,7 +19,11 @@ const App = () => {
           <Route path="contacts" element={<ContactsPage />} />
         </Route>
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="/login" element={<Login />} />
+        
+        <Route path="/dashboard" element={<DashboardLayout/>} >
+<Route path=":firstname" element={<Dashboard/>} />
+        </Route>
       </Routes>
     </>
   );

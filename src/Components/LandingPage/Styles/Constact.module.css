@@ -1,5 +1,6 @@
 .wrapper{
     display: flex;
+    gap: 2em;
 }
 
 .info, .form{
@@ -29,6 +30,11 @@
     background-color: var(--primary);
     color: var(--white);
     border-radius: 50%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 .form button{
 border: 0;

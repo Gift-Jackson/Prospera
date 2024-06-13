@@ -2,10 +2,13 @@ import { useState } from "react";
 import InputField from "../Global/Compo/InputField";
 import Title from "../LandingPage/Compo/Title";
 import styles from "./Auth.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import AuthLayout from "./AuthLayout";
 
 const Login = () => {
+  // const {username} = useParams()
+
+const navigate = useNavigate()
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -38,6 +41,8 @@ const Login = () => {
     if (validate()) {
       // Submit form or perform actions
       console.log("Form submitted successfully", formData);
+      let firstname = "Gift"
+navigate("/dashboard/" + firstname)
     }
   };
 
