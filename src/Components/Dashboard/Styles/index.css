@@ -1,0 +1,16 @@
+.increase{
+    color: var(--green);
+    display: flex;
+    align-items: center;
+}
+.decrease{
+    color: var(--crimson);
+    display: flex;
+    align-items: center;
+}
+.increase, .decrease{
+    font-size: .9em;
+}
+.increase span, .decrease span{
+    font-size: 1.1em;
+}

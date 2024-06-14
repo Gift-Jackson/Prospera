@@ -29,7 +29,8 @@
 
 :root{
   --primary: crimson;
-  --secondary: #f7f7f7;
+  --secondary: #f9f9f9;
+  --main: #fefefe;
   --border: #ddd;
   --border-focus: #aaa;
   --text: #303030;
@@ -89,5 +90,18 @@ main {
 }
 .main-container{
   padding-top: 5em;
+}
+
+#sideBar .nav-link{
+  color: var(--text-light);
+}
+#sideBar .nav-link.active{
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  font-weight: bold;
+}
+#sideBar .nav-link:hover{
+  background-color: var(--secondary);
 }
 

@@ -1,0 +1,32 @@
+.container{
+    background-color: var(--main);
+    padding: 1em 2em;
+    border-radius: .5em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    flex: 1;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+.items li{
+    margin-bottom: .5em;
+    display: flex;
+    gap: .5em;
+}
+.body{
+    flex: 1;
+}
+.body p:nth-of-type(2){
+    font-size: small;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    border-radius: .5em;
+}

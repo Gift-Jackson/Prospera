@@ -144,3 +144,86 @@ export const faqs = [
         content: "Prospera has strict policies and procedures in place to prevent and detect any potential involvement in terrorist financing or other illicit activities. These policies include comprehensive background checks and due diligence on both donors and recipient organizations. Prospera is committed to complying with anti-money laundering (AML) and counter-terrorist financing (CTF) regulations to maintain the integrity of its platform."
     },
 ]
+
+export const sideBar = [
+    {
+        icon: "dashboard",
+        label: "Dashboard",
+        path: ""
+    },
+    {
+        icon: "description",
+        label: "Application",
+        path: "/application"
+    },
+    {
+        icon: "add_card",
+        label: "Deposit",
+        path:"deposit"
+    },
+    {
+        icon: "credit_score",
+        label: "Withdrawal",
+        path:"withdrawal"
+    },
+    {
+        icon: "account_circle",
+        label: "Profile",
+        path: "profile"
+    },
+]
+
+export const listCardOne = [
+    {
+        icon: "public",
+        main: "Ukraine",
+        sub: "Humanitarian Service",
+        digit: "182.5k"
+    },
+    {
+        icon: "coronavirus",
+        main: "Covid-19",
+        sub: "Respondant",
+        digit: "235.8k"
+    },
+    {
+        icon: "detector_smoke",
+        main: "Disaster & Crisis",
+        sub: "Response",
+        digit: "149k"
+    },
+    {
+        icon: "sports_and_outdoors",
+        main: "Sports",
+        sub: "Football, Cricket Kit",
+        digit: "119k"
+    },
+]
+export const listCardTwo = [
+    {
+        icon: "wallet",
+        main: "Grace Lee",
+        sub: "$13,300",
+        // digit: "182.5k"
+    },
+    {
+        icon: "wallet",
+        main: "David Clark",
+        sub: "$10,100",
+        // digit: "235.8k"
+    },
+    {
+        icon: "wallet",
+        main: "Olivia White",
+        sub: "$86,000",
+        // digit: "149k"
+    },
+    {
+        icon: "wallet",
+        main: "Emily Turner",
+        sub: "$6530",
+        // digit: "119k"
+    },
+]
+
+
