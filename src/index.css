@@ -18,12 +18,12 @@
 }
 
 *::-webkit-scrollbar-track {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary);
   background-color: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   border-radius: 0;
 }
 
@@ -50,12 +50,15 @@
 }
 
 html {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
   scroll-padding-top: 10rem;
   color: var(--font-color);
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
 i,
 span,
 a {

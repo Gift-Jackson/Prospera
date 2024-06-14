@@ -1,0 +1,26 @@
+.gridInp {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 5em;
+    background-color: var(--main);
+    padding: 1.5em 1em;
+    border-radius: 1em;
+    border: 1px solid var(--border);
+}
+
+.form button {
+    width: min(100%, 500px);
+    margin: 0 auto;
+    padding: 1em 0;
+    border: 0;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 1em;
+}

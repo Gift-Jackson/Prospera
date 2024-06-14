@@ -42,7 +42,7 @@ const navigate = useNavigate()
       // Submit form or perform actions
       console.log("Form submitted successfully", formData);
       let firstname = "Gift"
-navigate("/dashboard/" + firstname)
+navigate("/account/" + firstname + "/overview")
     }
   };
 

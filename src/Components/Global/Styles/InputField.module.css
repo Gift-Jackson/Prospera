@@ -7,20 +7,25 @@
     /* gap: .3em; */
 }
 .input label{
-    font-size: small;
+    font-size: .9em;
     padding-left: .3em;
 }
 .input input, .input textarea, .input select{
     padding: .75em 1.3em;
     border: 1px solid var(--border);
-    border-radius: .3em;
-    background-color: transparent;
+    border-radius: 1em;
+    background-color: var(--secondary);
 }
 .input input:focus-within,
 .input textarea:focus-within,
 .input select:focus-within{
-    outline: 4px solid rgb(250, 151, 171);
-    border-color: crimson;
+    outline: 3px solid rgb(255, 173, 143);
+    outline-offset: 1px;
+    border-color: var(--primary);
+    box-shadow: 0 0 5px rgb(255, 173, 143);
+}
+::placeholder{
+    color: var(--text-light);
 }
 
 .field{

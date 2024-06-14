@@ -21,9 +21,9 @@ const ListCard = ({ title, items, id }) => {
                 <p>
                   <b>{item.main}</b>
                 </p>
-                <p>{item.sub}</p>
+                <p className="light">{item.sub}</p>
               </div>
-              {item.digit && <div>{item.digit}</div>}
+              {item.digit && <div className="light">{item.digit}</div>}
             </li>
           ))}
         </ul>
