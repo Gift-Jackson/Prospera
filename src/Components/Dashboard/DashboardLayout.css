@@ -7,7 +7,6 @@
 .container .wrapper {
     /* width: 80%; */
     background-color: var(--secondary);
-    height: calc(100dvh - 50px);
     overflow: scroll;
     flex: 4;
 }
@@ -16,7 +15,6 @@
     /* width: 20%; */
     flex: 1;
     background-color: var(--main);
-    min-height: 100dvh;
     overflow: scroll;
     border-right: 1px solid var(--border);
 }
@@ -73,7 +71,7 @@
     .container .sidebar {
         width: 60%;
         position: fixed;
-        height: 100vh;
+        min-height: 100dvh;
         left: 0;
         top: 0;
         z-index: 99;

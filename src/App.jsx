@@ -9,6 +9,7 @@ import Login from "./Components/Authentication/Login";
 import DashboardLayout from "./Components/Dashboard/DashboardLayout";
 import Dashboard from "./Components/Dashboard/Pages/Dashboard";
 import { AnimatePresence } from "framer-motion";
+import Application from "./Components/Dashboard/Pages/Application";
 const App = () => {
   const location = useLocation();
   return (
@@ -24,8 +25,9 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
 
-          <Route path="/dashboard" element={<DashboardLayout />}>
-            <Route path=":firstname" element={<Dashboard />} />
+          <Route path="/dashboard/:firstname/" element={<DashboardLayout />}>
+            <Route path="overview" element={<Dashboard />} />
+            <Route path="application" element={<Application />} />
           </Route>
         </Routes>
       </AnimatePresence>

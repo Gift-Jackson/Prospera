@@ -1,3 +1,4 @@
+
 export const navLinks = [
     {
         label: "Home",
@@ -145,16 +146,17 @@ export const faqs = [
     },
 ]
 
+
 export const sideBar = [
     {
         icon: "dashboard",
         label: "Dashboard",
-        path: ""
+        path: "overview"
     },
     {
         icon: "description",
         label: "Application",
-        path: "/application"
+        path: "application"
     },
     {
         icon: "add_card",
