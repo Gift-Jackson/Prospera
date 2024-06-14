@@ -11,7 +11,7 @@
 .flex{
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: .5em;
 
 }
 .icon{
@@ -43,4 +43,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media (max-width:540px) {
+    .card{
+        padding: 1em 1em .75em;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
 }

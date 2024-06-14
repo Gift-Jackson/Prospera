@@ -23,8 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--border);
-    border-radius: .5em;
+    /* border: 1px solid var(--border); */
+    border-radius: 50%;
     background-color: var(--secondary);
     visibility: hidden;
 }
@@ -39,9 +39,10 @@
     display: flex;
     align-items: center;
     gap: .5em;
-    padding: .5em 1em;
+    padding: .65em 1em;
     margin-bottom: .5em;
     border-radius: 50px;
+    font-size: 0.9em;
 }
 .btn{
     background-color: var(--primary);

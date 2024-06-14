@@ -3,14 +3,17 @@ import Title from "../Compo/Title";
 import health from "../../../assets/proof-healthcare.jpg";
 import art from "../../../assets/art.jpg";
 import com from "../../../assets/comgrant.jpg";
-import styles from "../Styles/Explore.module.css"
+import styles from "../Styles/Explore.module.css";
+import Transition from "../../Global/Transition";
 const ServicesPage = () => {
   return (
     <>
-      <div className="main-container">
-        <Services />
-        <Explore />
-      </div>
+      <Transition>
+        <div className="main-container">
+          <Services />
+          <Explore />
+        </div>
+      </Transition>
     </>
   );
 };
@@ -45,12 +48,14 @@ export const Explore = () => {
 
         <ul className={styles.lists}>
           {explores.map((item, index) => (
-              <li key={index}>
-                  <div className={styles.img}><img src={item.image} alt="" /></div>
-                  <div className={styles.content}>
-                      <h3> {item.title} </h3>
-                      <p> {item.body} </p>
-                  </div>
+            <li key={index}>
+              <div className={styles.img}>
+                <img src={item.image} alt="" />
+              </div>
+              <div className={styles.content}>
+                <h3> {item.title} </h3>
+                <p> {item.body} </p>
+              </div>
             </li>
           ))}
         </ul>

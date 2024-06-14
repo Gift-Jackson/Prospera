@@ -1,16 +1,21 @@
 import PropTypes from "prop-types";
-import styles from "../Styles/ListCard.module.css"
-const ListCard = ({ title, items }) => {
+import styles from "../Styles/ListCard.module.css";
+const ListCard = ({ title, items, id }) => {
   return (
     <>
-      <div className={styles.container}>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        className={styles.container}
+        id={id}
+      >
         <h3>{title}</h3>
 
         <ul className={styles.items}>
           {items.map((item, index) => (
             <li key={index}>
               <div className={styles.icon}>
-                <span className="material-symbols-outlined">{item.icon}</span>
+                <span id="icon" className="material-symbols-outlined">{item.icon}</span>
               </div>
               <div className={styles.body}>
                 <p>
@@ -37,6 +42,7 @@ ListCard.propTypes = {
     })
   ).isRequired,
   title: PropTypes.string,
+  id: PropTypes.string,
 };
 
 export default ListCard;

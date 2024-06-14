@@ -1,10 +1,14 @@
 import styles from "../Styles/card.module.css";
 import "../Styles/index.css";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 const Cards = ({ icon, label, amount, rate, className, rateIcon }) => {
   return (
     <>
-      <div className={styles.card}>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        className={styles.card}
+      >
         <div className={styles.flex}>
           <div className={styles.icon}>
             <span className="material-symbols-outlined">{icon}</span>
@@ -28,12 +32,12 @@ const Cards = ({ icon, label, amount, rate, className, rateIcon }) => {
   );
 };
 Cards.propTypes = {
-    icon: PropTypes.string,
-    label: PropTypes.string,
-    amount: PropTypes.number,
-    rate: PropTypes.number,
-    className: PropTypes.string,
-    rateIcon: PropTypes.string,
-}
+  icon: PropTypes.string,
+  label: PropTypes.string,
+  amount: PropTypes.number,
+  rate: PropTypes.number,
+  className: PropTypes.string,
+  rateIcon: PropTypes.string,
+};
 
 export default Cards;
