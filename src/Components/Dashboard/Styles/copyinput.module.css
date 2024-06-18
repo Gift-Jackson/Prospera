@@ -9,7 +9,7 @@
 .container input {
     background-color: var(--secondary);
     border: 0;
-    flex: 1;
+    width: 100%;
     padding-left: 1em;
 }
 
@@ -17,7 +17,6 @@
     background-color: var(--primary);
     border: 0;
     padding: 1em;
-    width: 100px;
     cursor: default;
     color: var(--white);
 }
