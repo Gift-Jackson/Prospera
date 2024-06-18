@@ -1,9 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import "../DashboardLayout.css";
 import styles from "../Styles/Sidebar.module.css";
 import logo from "../../../assets/prospera-favicon-color.png";
 import { sideBar } from "../../../Constants/data";
-import { animate, motion } from "framer-motion";
 const MobileNav = ({ toggleNav }) => {
     const navVar = {
         initial: {
@@ -40,7 +40,7 @@ const MobileNav = ({ toggleNav }) => {
           <ul id="sideBar">
             {sideBar.map((item, index) => (
               <li key={index}>
-                <NavLink to={item.path} className="nav-link">
+                <NavLink onClick={toggleNav} to={item.path} className="nav-link">
                   <span className="material-symbols-outlined">{item.icon}</span>
                   <span className={styles.label}>{item.label}</span>
                 </NavLink>

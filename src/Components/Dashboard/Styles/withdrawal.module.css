@@ -1,0 +1,41 @@
+.container{
+    background-color: var(--white);
+    padding: 2em 1.5em;
+    border-radius: .5em;
+    width: min(100%, 500px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.btns{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.btns button{
+    padding: .85em 2em;
+    border-radius: .5em;
+    border: 1px solid var(--border);
+    background-color: var(--secondary);
+}
+.active{
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    border-color: var(--primary);
+}
+
+.form{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.form button{
+    height: 45px;
+    border: 0;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1em;
+    border-radius: 1em;
+}

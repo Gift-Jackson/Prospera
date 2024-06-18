@@ -1,0 +1,22 @@
+.container{
+    background-color: var(--white);
+    padding: 2em;
+    border-radius: .5em;
+    width: min(100%, 500px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.container h3{
+    margin-bottom: 1em;
+}
+
+.btn{
+    margin-top: 2em;
+    height: 45px;
+    padding: 0 2em;
+    border: 0;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1em;
+    border-radius: .5em;
+}

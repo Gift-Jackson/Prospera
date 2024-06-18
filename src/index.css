@@ -108,3 +108,14 @@ main {
   background-color: var(--secondary);
 }
 
+.apply-btn{
+  margin-top: 2em;
+  background-color: var(--primary);
+  border: 0;
+  height: 45px;
+  padding: 0 2em;
+  font-size: 1em;
+  color: var(--white);
+  border-radius: .5em;
+}
+

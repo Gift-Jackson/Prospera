@@ -1,17 +1,13 @@
-import PropTypes from 'prop-types';
-import styles from '../Styles/InputField.module.css';
+import PropTypes from "prop-types";
+import styles from "../Styles/InputField.module.css";
 
-const SelectField = ({
-  label,
-  name,
-  id,
-  onChange,
-  value,
-  options,
-}) => {
+const SelectField = ({ label, name, id, onChange, value, options }) => {
   return (
     <div className={styles.input}>
-      <label htmlFor={id}>{label}<span className={styles.red}>*</span></label>
+      <label htmlFor={id}>
+        {label}
+        <span className={styles.red}>*</span>
+      </label>
       <select
         name={name}
         id={id}
@@ -22,14 +18,7 @@ const SelectField = ({
         <option value="" disabled>{`Select ${label}`}</option>
         {options.map((option, index) => (
           <option key={index} value={option.value}>
-            <span>
-              <img
-                src={option.flag}
-                alt={option.label}
-                style={{ width: '20px', marginRight: '8px' }}
-              />
-              {option.label}
-            </span>
+            {option.label}
           </option>
         ))}
       </select>
@@ -47,7 +36,6 @@ SelectField.propTypes = {
     PropTypes.shape({
       value: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
-      flag: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

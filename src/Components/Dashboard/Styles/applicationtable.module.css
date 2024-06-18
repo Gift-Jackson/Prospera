@@ -1,0 +1,49 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  @media (max-width:920px) {
+    .table{
+        width: 900px;
+        overflow-x: scroll;
+    }
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    border: 0;
+
+  }
+  
+  .table td{
+    font-size: small;
+  }
+  .table th {
+    /* background-color: #f2f2f2; */
+    font-weight: bold;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .pending {
+    color: orange;
+  }
+  
+  .failed {
+    color: red;
+  }
+
+  .container{
+    background-color: var(--white);
+    padding: 1em;
+    border-radius: 1em;
+    overflow-x: scroll;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  

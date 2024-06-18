@@ -10,6 +10,10 @@ import DashboardLayout from "./Components/Dashboard/DashboardLayout";
 import Dashboard from "./Components/Dashboard/Pages/Dashboard";
 import { AnimatePresence } from "framer-motion";
 import Application from "./Components/Dashboard/Pages/Application";
+import Profile from "./Components/Dashboard/Pages/Profile";
+import Deposit from "./Components/Dashboard/Pages/Deposit";
+import Withdrawal from "./Components/Dashboard/Pages/Withdrawal";
+import Error from "./Components/Dashboard/Pages/Error";
 const App = () => {
   const location = useLocation();
   return (
@@ -28,6 +32,10 @@ const App = () => {
           <Route path="/account/:firstname/" element={<DashboardLayout />}>
             <Route path="overview" element={<Dashboard />} />
             <Route path="application" element={<Application />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="deposit" element={<Deposit />} />
+            <Route path="withdrawal" element={<Withdrawal />} />
+            <Route path="error" element={<Error />} />
           </Route>
         </Routes>
       </AnimatePresence>

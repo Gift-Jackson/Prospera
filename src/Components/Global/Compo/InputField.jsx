@@ -9,6 +9,7 @@ const InputField = ({
   id,
   onChange,
   value,
+  accept
 }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const togglePasswordVisibility = () => {
@@ -28,6 +29,7 @@ const InputField = ({
             name={name}
             id={id}
             placeholder={placeholder}
+            accept={accept}
             value={value}
             onChange={onChange}
           />
@@ -53,6 +55,7 @@ InputField.propTypes = {
   id: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  accept: PropTypes.string,
 };
 
 export default InputField;
