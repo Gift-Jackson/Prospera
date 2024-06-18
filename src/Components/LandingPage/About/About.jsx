@@ -28,7 +28,7 @@ const About = () => {
               with potential tax incentives, increasing the impact of their
               grants
             </article>
-            <Link to="register">
+            <Link to="/login">
               <button
                 title="Sign up with Prospera to apply for grant."
                 className={styles.btn}

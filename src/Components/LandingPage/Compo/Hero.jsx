@@ -18,7 +18,7 @@ const Hero = () => {
               <Link to="about">
                 <button title="Learn more about Prospera" className={styles.btn_1}>Learn More</button>
               </Link>
-              <Link to="register">
+              <Link to="login">
                 <button title="Sign up with Prospera to apply for grant." className={styles.btn_2}>Apply for grant &nbsp; <i className="fa-solid fa-arrow-right"></i></button>
               </Link>
             </div>

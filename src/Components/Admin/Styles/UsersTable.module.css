@@ -1,0 +1,116 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    border: 0;
+}
+
+.table td{
+    font-size: small;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.editBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.editBtn:hover {
+    background-color: #45a049;
+}
+
+.deleteBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.deleteBtn:hover {
+    background-color: #e53935;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    height: 100dvh;
+
+}
+
+.modal_container {
+    background-color: var(--white);
+    width: min(90%, 500px);
+    margin: 3em auto;
+    padding: 3em 1.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 1em;
+    position: relative;
+}
+.icon{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    position: absolute;
+    top: .75em;
+    right: 1em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.form button{
+    height: 45px;
+    border: 0;
+    background-color: var(--primary);
+    font-size: 1em;
+    color: var(--white);
+    border-radius: .5em;
+}
+.container{
+    margin: 2em auto;
+    width: min(100%, 1024px);
+    background-color: var(--white);
+   padding-bottom: 2em;
+}
+.h3{
+    margin-top: 1em;
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    .container{
+        overflow: scroll;
+    }
+}

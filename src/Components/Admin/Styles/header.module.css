@@ -1,0 +1,25 @@
+.header{
+    background-color: var(--dark);
+}
+.header *{
+    color: var(--white);
+}
+.header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+.header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.header button{
+    border: 0;
+    padding: 1em 2em;
+    border-radius: .5em;
+    color: #fefefe;
+    background-color: var(--primary);
+}
+
