@@ -20,6 +20,7 @@ const Withdrawal = lazy(() => import("./Components/Dashboard/Pages/Withdrawal"))
 const Error = lazy(() => import("./Components/Dashboard/Pages/Error"));
 const Admin = lazy(() => import("./Components/Admin/Admin"));
 const AdminDashboard = lazy(() => import("./Components/Admin/AdminDashboard"));
+const Proofs = lazy(()=> import("./Components/Admin/Proofs"))
 
 const App = () => {
   const location = useLocation();
@@ -48,7 +49,8 @@ const App = () => {
             </Route>
 
             <Route path="/admin" element={<Admin />}>
-              <Route index element={<AdminDashboard />} />
+              <Route path="" element={<AdminDashboard />} />
+              <Route path="proofs" element={<Proofs />} />
             </Route>
           </Routes>
         </Suspense>

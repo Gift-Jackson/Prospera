@@ -4,6 +4,7 @@ import "../DashboardLayout.css";
 import styles from "../Styles/Sidebar.module.css";
 import logo from "../../../assets/prospera-favicon-color.png";
 import { sideBar } from "../../../Constants/data";
+
 const MobileNav = ({ toggleNav }) => {
     const navVar = {
         initial: {

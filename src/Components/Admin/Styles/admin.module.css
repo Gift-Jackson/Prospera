@@ -1,0 +1,76 @@
+.container{
+    width: min(100%, 700px);
+    margin: 1em auto 2em;
+    border-bottom: 1px solid var(--border);
+}
+.heading{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 1em;
+    gap: 1em;
+    padding-bottom: 2em;
+}
+.card{
+    /* border: 1px solid var(--border); */
+    padding: 1em;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.user{
+    /* border: 1px solid var(--border); */
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.user .btns{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-block-start: 1em;
+}
+.user button{
+    padding: .5em;
+    border: 0;
+    border-radius: .3em;
+    color: #fefefe;
+}
+.edit{
+    background-color: mediumseagreen;
+}
+.del{
+    background-color: crimson;
+}
+.link{
+    text-align: center;
+    background-color: var(--primary);
+    padding: .5em 1em;
+    color: var(--white);
+    border-radius: .5em;
+}
+.wrapper{
+    margin-top: 2em;
+    border-top: 1px solid var(--border);
+    padding-top: 1em;
+}
+.list *{
+    list-style-type: dics;
+}
+.list{
+    padding: .5em 2em;
+}
+.list a{
+    display: block;
+    background-color: var(--secondary);
+    margin-bottom: .5em;
+    padding: .5em;
+}
+.td, .rightAlign{
+    font-size: small;
+}

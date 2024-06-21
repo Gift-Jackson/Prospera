@@ -23,6 +23,24 @@ const userData = [
     requestedGrants: 350000,
     grantStatus: "Pending",
   },
+  {
+    id: 3,
+    fullname: "Jane Smith",
+    email: "jane.smith@example.com",
+    country: "UK",
+    awardedGrants: 300000,
+    requestedGrants: 350000,
+    grantStatus: "Pending",
+  },
+  {
+    id: 4,
+    fullname: "John Doe",
+    email: "john.doe@example.com",
+    country: "USA",
+    awardedGrants: 20000,
+    requestedGrants: 25000,
+    grantStatus: "Active",
+  },
 ];
 
 const UsersTable = () => {
